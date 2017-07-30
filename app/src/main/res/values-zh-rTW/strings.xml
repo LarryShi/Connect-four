@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">四子棋</string>
+    <string name="startscreen_tap">開始遊戲</string>
+    <string name="game_textview_player1">玩家 1</string>
+    <string name="game_textview_player2">玩家 2</string>
+    <string name="game_textview_playerV"> V</string>
+    <string name="game_textview_playerS">S </string>
+    <string name="icon_for_player_1">Icon for Player 1</string>
+    <string name="icon_for_player_2">Icon for Player 2</string>
+    <string name="_0">0</string>
+    <string name="gameboardlist1">gameBoardList1</string>
+    <string name="gameboardlist2">gameBoardList2</string>
+    <string name="gameboardlist3">gameBoardList3</string>
+    <string name="gameboardlist4">gameBoardList4</string>
+    <string name="gameboardlist5">gameBoardList5</string>
+    <string name="gameboardlist6">gameBoardList6</string>
+    <string name="gameboardlist7">gameBoardList7</string>
+    <string name="restart">重新開始</string>
+    <string name="retract">悔棋</string>
+    <string name="just_a_start_image">Just a Start Image</string>
+    <string name="confirm_to_exit">確定退出</string>
+    <string name="NOTICE">注意</string>
+    <string name="Confirm">確定</string>
+    <string name="Cancel">取消</string>
+    <string name="myName">石中琦</string>
+    <string name="myStuid"></string>
+</resources>

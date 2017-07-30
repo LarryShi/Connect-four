@@ -1,0 +1,13 @@
+<resources>
+    <!-- for 1080P  -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="game_player_image_width">60dp</dimen>
+    <dimen name="game_player_iamge_height">47dp</dimen>
+    <dimen name="game_key">46dp</dimen>
+    <dimen name="game_board_width">46dp</dimen>
+    <dimen name="game_board_height">285dp</dimen>
+    <dimen name="game_result_width">300dp</dimen>
+    <dimen name="game_result_height">100dp</dimen>
+    <dimen name="game_play_text_size">11pt</dimen>
+</resources>

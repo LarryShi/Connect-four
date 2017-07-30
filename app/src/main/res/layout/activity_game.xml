@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    tools:context="com.a3035347861.hku.smartphoneasg1.mainGame"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/game_linearLayout_vs"
+        android:layout_above="@+id/Game_linearLayoutGame"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/game_textview_player1_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="13pt"
+            android:textColor="@color/darkBlue"
+            android:shadowColor="@color/Black"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:shadowDy="2"
+            android:layout_margin="5pt"
+            />
+        <TextView
+            android:id="@+id/game_textview_playerV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_textview_playerV"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:textColor="@color/darkBlue"
+            android:shadowColor="@color/Black"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:shadowDy="2"
+            />
+        <TextView
+            android:id="@+id/game_textview_playerS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_textview_playerS"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:textColor="@color/DarkRed"
+            android:shadowColor="@color/Black"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:shadowDy="2"
+            />
+        <TextView
+            android:id="@+id/game_textview_player2_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="13pt"
+            android:textColor="@color/DarkRed"
+            android:shadowColor="@color/Black"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:shadowDy="2"
+            android:layout_margin="5pt"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/game_linearLayout_label"
+        android:layout_above="@+id/game_linearLayout_vs"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/game_textview_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_textview_player1"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="@dimen/game_play_text_size"
+            android:textColor="@color/darkBlue"
+            android:shadowColor="@color/Black"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:shadowDy="2"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/game_player_image_width"
+            android:layout_height="@dimen/game_player_iamge_height"
+            app:srcCompat="@drawable/player1"
+            android:id="@+id/game_imageview_player1"
+            android:contentDescription="@string/icon_for_player_1">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="@dimen/game_player_image_width"
+            android:layout_height="@dimen/game_player_iamge_height"
+            app:srcCompat="@drawable/player2"
+            android:id="@+id/game_imageview_player2"
+            android:contentDescription="@string/icon_for_player_2">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/game_textview_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_textview_player2"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="@dimen/game_play_text_size"
+            android:textColor="@color/DarkRed"
+            android:shadowColor="@color/Black"
+            android:shadowDx="2"
+            android:shadowRadius="2"
+            android:shadowDy="2"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Game_linearLayout_boardKeyGame"
+        android:background="@color/BlueGrey"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list1"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist1" >
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list2"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist2"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list3"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist3"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list4"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist4"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list5"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist5"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list6"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist6"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_relativelayout_list7"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist7"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/Game_linearLayoutGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp">
+
+
+        <Button
+            android:text="@string/restart"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/game_button_restart"
+            android:layout_margin="5pt"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/retract"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Green"
+            android:id="@+id/game_button_retract"
+            android:layout_margin="5pt"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Game_linearLayoutGame"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Game_linearLayout_boardKeyGame"
+        android:layout_alignStart="@+id/Game_linearLayout_boardKeyGame">
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list1"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist1" >
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list2"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist2"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list3"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist3"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list4"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist4"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list5"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist5"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list6"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist6"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/game_board_width"
+            android:layout_height="@dimen/game_board_height"
+            android:id="@+id/game_imgbutton_list7"
+            android:background="@drawable/gameboard"
+            android:contentDescription="@string/gameboardlist7"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="@dimen/game_result_width"
+            android:layout_height="@dimen/game_result_height"
+            app:srcCompat="@drawable/player1win"
+            android:id="@+id/game_imageview_player1_win">
+        </ImageView>
+        <ImageView
+            android:layout_width="@dimen/game_result_width"
+            android:layout_height="@dimen/game_result_height"
+            app:srcCompat="@drawable/player2win"
+            android:id="@+id/game_imageview_player2_win"
+            android:contentDescription="@string/icon_for_player_2">
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="@dimen/game_result_width"
+            android:layout_height="@dimen/game_result_height"
+            app:srcCompat="@drawable/draw"
+            android:id="@+id/game_imageview_draw"
+            android:contentDescription="@string/icon_for_player_2">
+        </ImageView>
+    </LinearLayout>
+</RelativeLayout>

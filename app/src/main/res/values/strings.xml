@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Connect Four</string>
+    <string name="startscreen_tap">Start Game</string>
+    <string name="game_textview_player1">Player 1</string>
+    <string name="game_textview_player2">Player 2</string>
+    <string name="game_textview_playerV"> V</string>
+    <string name="game_textview_playerS">S </string>
+    <string name="icon_for_player_1">Icon for Player 1</string>
+    <string name="icon_for_player_2">Icon for Player 2</string>
+    <string name="_0">0</string>
+    <string name="gameboardlist1">gameBoardList1</string>
+    <string name="gameboardlist2">gameBoardList2</string>
+    <string name="gameboardlist3">gameBoardList3</string>
+    <string name="gameboardlist4">gameBoardList4</string>
+    <string name="gameboardlist5">gameBoardList5</string>
+    <string name="gameboardlist6">gameBoardList6</string>
+    <string name="gameboardlist7">gameBoardList7</string>
+    <string name="restart">Restart</string>
+    <string name="retract">Retract</string>
+    <string name="just_a_start_image">Just a Start Image</string>
+    <string name="confirm_to_exit">Confirm to Exit</string>
+    <string name="NOTICE">NOTICE</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Cancel">Cancel</string>
+    <string name="myName">SHI Zhongqi</string>
+    <string name="myStuid"></string>
+</resources>
